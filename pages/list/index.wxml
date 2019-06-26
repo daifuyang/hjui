@@ -1,0 +1,94 @@
+<!--pages/list/index.wxml-->
+<view class="hj-list  hj-bg-white">
+  <view class="hj-list-header">
+    简单列表
+  </view>
+  <view class="hj-list-item">
+    <view class="hj-content">菜单列表页</view>
+  </view>
+
+  <view class="hj-list-item">
+    <view class="icon">
+      <text class="iconfont iconsetting"></text>
+    </view>
+    <view class="hj-content">菜单列表页</view>
+  </view>
+
+  <view class="hj-list-item">
+    <view class="hj-content">菜单列表页</view>
+    <view class="hj-more">
+      <text class="iconfont iconright"></text>
+    </view>
+  </view>
+
+  <view class="hj-list-item">
+    <view class="icon">
+      <text class="iconfont iconsetting"></text>
+    </view>
+    <view class="hj-content">菜单列表页</view>
+    <view class="hj-more">
+      <text class="iconfont iconright"></text>
+    </view>
+  </view>
+
+    <view class="hj-list-item hj-no-icon-border">
+      <view class="icon">
+        <text class="iconfont iconsetting"></text>
+      </view>
+      <view class="hj-content">
+        <view class="hj-flex">
+          <view class="hj-flex-1">内容下划线列表页，图标留白</view>
+            <view class="hj-more">
+              <text class="iconfont iconright"></text>
+            </view>
+        </view>
+      </view>
+    </view>
+
+   <view class="hj-list-header">
+      带媒体列表
+    </view>
+
+  <view class="hj-list-item">
+    <view class="hj-list-media">
+      <view class="wrap_img">
+        <image mode="widthFix" src="http://iph.href.lu/100x75?text=%E7%BC%A9%E7%95%A5%E5%9B%BE"></image>
+      </view>
+    </view>
+    <view class="hj-content">
+      <view class="hj-title hj_ellipsis_1">
+        什么是hjui
+      </view>
+      <view class="hj-desc hj_ellipsis_2">
+        hjui是一个快速开发的UI样式框架
+      </view>
+    </view>
+    <view class="hj-more">
+      <text class="iconfont iconright"></text>
+    </view>
+  </view>
+
+  <view class="hj-list-item">
+    
+    <view class="hj-content">
+      <view class="hj-title hj_ellipsis_1">
+        什么是hjui
+      </view>
+      <view class="hj-desc hj_ellipsis_2">
+        hjui是一个快速开发的UI样式框架
+      </view>
+    </view>
+
+    <view class="hj-list-media">
+      <view class="wrap_img">
+        <image mode="widthFix" src="http://iph.href.lu/100x75?text=%E7%BC%A9%E7%95%A5%E5%9B%BE"></image>
+      </view>
+    </view>
+
+    
+    <view class="hj-more">
+      <text class="iconfont iconright"></text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,43 @@
+<!--pages/modal/share.wxml-->
+<template name="share">
+  <view bindtap="closeBtn" catchtouchmove="stopAction" class="modal">
+    <view catchtap="stopAction" class="hj-bottom-content">
+      <view class="hj-flex hj-content-padded">
+        <view class="hj-flex-1">
+          <view>
+            <image src="/assets/images/more/0.png"></image>
+          </view>
+          <view>
+            <text class="title">分享</text>
+          </view>
+        </view>
+        <view class="hj-flex-1">
+          <view>
+            <image src="/assets/images/more/1.png"></image>
+          </view>
+          <view>
+            <text class="title">投诉</text>
+          </view>
+        </view>
+         <view class="hj-flex-1">
+          <view>
+            <image src="/assets/images/more/2.png"></image>
+          </view>
+          <view>
+            <text class="title">留言</text>
+          </view>
+        </view>
+        <view class="hj-flex-1">
+          <view>
+            <image src="/assets/images/more/3.png"></image>
+          </view>
+          <view>
+            <text class="title">评价</text>
+          </view>
+        </view>
+      </view>
+      <!-- 关闭按钮 -->
+      <view bindtap="closeBtn" class="btn">关闭</view>
+    </view>
+  </view>
+</template>

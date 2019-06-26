@@ -1,0 +1,27 @@
+.hj-bottom-content{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.hj-bottom-content .hj-content-padded {
+  padding: 40rpx 20rpx;
+}
+
+image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.hj-bottom-content .btn{
+  border-top: 2rpx #EFF2FF solid;
+  padding:25rpx !important;
+}
+
+@import "/assets/css/modal.wxss";

@@ -1,0 +1,4 @@
+/* pages/text/index.wxss */
+.hj-list .hj-list-item .hj-more{
+  font-size: 24rpx;
+}

@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -60,6 +60,13 @@
 					"id": 2,
 					"name": "分享模态框",
 					"pathName": "pages/modal/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "音频页面",
+					"pathName": "pages/media/audio",
 					"query": "",
 					"scene": null
 				}

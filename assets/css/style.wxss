@@ -90,7 +90,9 @@ p, .p {
 }
 
 /* 背景颜色 */
-
+.hj-center{
+  text-align: center
+}
 /* 辅助属性
 ** 图片文本
 */

@@ -1,0 +1,41 @@
+<!--pages/media/audio.wxml-->
+<view class="page">
+  <view class="hj-bg-white">
+    <view wx:for="{{audioList}}" class="hj-list">
+    <view class="hj-list-item">
+      <view bindtap="setPlayIndex" style="color:{{audioControl.index == index ? 'red' : ''}}" data-index="{{index}}" class="hj-content">{{item.name}}</view>
+    </view>
+  </view>
+  </view>
+
+  <view class="audioControl hj-content-padded">
+    <view class="hj-flex">
+     <text>{{audioControl.start_time}}</text> <progress class="hj-flex-1" percent="{{audioControl.percent}}" border-radius="5" activeColor="pink" /> <text>{{audioControl.end_time}}</text>
+    </view>
+    <view class="hj-flex hj-center">
+       
+       <view class="hj-flex-1" bindtap="changeIndexStep" data-type="0">
+        上一首
+      </view>
+      
+      <view class="hj-flex-1" bindtap="play">
+        {{audioControl.status ? "暂停":"播放"}}
+      </view>
+
+      <view class="hj-flex-1" bindtap="changeIndexStep" data-type="1">
+        下一首
+      </view>
+
+      <view class="hj-flex-1" bindtap="stop">
+        停止
+      </view>
+
+      <view class="hj-flex-1" bindtap="seek">
+        跳转
+      </view>
+    </view>
+  </view>
+
+    
+
+</view>

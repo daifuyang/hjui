@@ -5,7 +5,8 @@
     "pages/list/index",
     "pages/modal/demo",
     "pages/modal/index",
-    "pages/modal/share"
+    "pages/modal/share",
+    "pages/media/audio"
   ],
   "window": {
     "backgroundTextStyle": "light",

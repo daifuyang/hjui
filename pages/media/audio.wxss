@@ -1,0 +1,5 @@
+/* pages/media/audio.wxss */
+.audioControl progress{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

@@ -6,7 +6,11 @@
     "pages/modal/demo",
     "pages/modal/index",
     "pages/modal/share",
-    "pages/media/audio"
+    "pages/media/audio",
+    "pages/media/video"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
   ],
   "window": {
     "backgroundTextStyle": "light",

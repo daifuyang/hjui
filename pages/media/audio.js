@@ -23,7 +23,8 @@ Page({
       start_time: '00:00',
       end_time: '00:00',
       index: 0,
-      status: false
+      status: true,
+      seek:false //拖动中
     }
   },
 
@@ -85,18 +86,12 @@ Page({
   // 初始化音频方法
   audioInit: function() {
     var that = this;
-    audioManage = audio.init(0);
+    audioManage = audio.init(1);
+    audioManage.autoplay = true;
     that.initPlayList();
-    audioManage.onTimeUpdate(function () {
-      console.log(111)
-      var percent = audioManage.currentTime / audioManage.duration * 100;
-      //console.log(percent);
-      that.setData({
-        "audioControl.percent": percent,
-        "audioControl.start_time": util.formatSecond(audioManage.currentTime),
-        "audioControl.end_time": util.formatSecond(audioManage.duration)
-      })
-    })
+    that.onTimeUpdate(); //可选监听进度条
+    that.onNativeBtn(); //1：监听上下按钮
+    that.onEnded();
   },
 
   //播放音频方法
@@ -133,22 +128,56 @@ Page({
 
   //跳转到指定位置
   seek: function() {
-    audio.seek(20)
+    audio.seek(180)
   },
 
+  //seekToValue拖动slider完成回调
+  seekToValue:function(e){
+    var percent = e.detail.value;
+    var end = audioManage.duration;
+    var num = end * percent * 0.01;
+    audio.seek(num);
+    this.setData({
+      "audioControl.seek": false,
+    })
+  },
+
+  //流畅拖动进度条
+  noChangeValue:function(e){
+    var percent = e.detail.value;
+    //改变拖动状态
+    this.setData({
+      "audioControl.percent": percent,
+      "audioControl.seek": true
+    })
+  },
+
+  //每次切换初始化项目
   initPlayList: function() {
     var that = this;
     var index = this.data.audioControl.index;
     var url = this.data.audioList[index].url;
+    audioManage.title = that.data.audioList[index].name
+    audioManage.epname = that.data.audioList[index].name
+    audioManage.singer = ''
     audioManage.src = url
+    this.setData({
+      "audioControl.status": true
+    })
   },
 
+  //点击播放
   setPlayIndex: function(e) {
     this.setData({
       "audioControl.index": e.currentTarget.dataset.index,
     });
     this.initPlayList();
-    this.play();
+    //this.play();
+  },
+
+  //设置当前音频的信息
+  initAudioInfo:function(){
+    
   },
 
   //上一首下一首
@@ -168,7 +197,7 @@ Page({
           "audioControl.index": index,
         })
         that.initPlayList();
-        that.play();
+        //that.play();
         break;
       case 1:
 
@@ -182,9 +211,69 @@ Page({
           "audioControl.index": index,
         })
         that.initPlayList();
-        that.play();
+        //that.play();
         break;
     }
+  },
+  //监听onTimeUpdate进度条
+  onTimeUpdate:function(){
+    var that = this;
+    audioManage.onTimeUpdate(function () {
+      var percent = audioManage.currentTime / audioManage.duration * 100;
+      //console.log(percent);
+      that.setData({
+        "audioControl.start_time": util.formatSecond(audioManage.currentTime),
+        "audioControl.end_time": util.formatSecond(audioManage.duration)
+      })
+      if(!that.data.audioControl.seek){
+        that.setData(
+          {
+            "audioControl.percent": percent
+          }
+        )
+      }
+    })
+  },
+
+  //监听原生上一曲下一曲按钮
+  onNativeBtn:function(){
+   var that = this;
+    audioManage.onNext(function(){
+      var e = {
+        currentTarget: {
+          dataset: {
+            type: 1
+          }
+        }
+      }
+      that.changeIndexStep(e);
+    });
+    audioManage.onPrev(function () {
+      var e = {
+        currentTarget: {
+          dataset: {
+            type: 0
+          }
+        }
+      }
+      that.changeIndexStep(e);
+    });
+  },
+
+  //onEnded监听播放结束
+  onEnded:function(){
+    var that = this;
+    console.log("onEnded:结束了");
+    audioManage.onEnded(function(){
+      var e = {
+        currentTarget: {
+          dataset: {
+            type: 1
+          }
+        }
+      }
+      that.changeIndexStep(e);
+    });
   }
 
 })

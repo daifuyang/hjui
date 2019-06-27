@@ -9,8 +9,13 @@
   </view>
 
   <view class="audioControl hj-content-padded">
-    <view class="hj-flex">
-     <text>{{audioControl.start_time}}</text> <progress class="hj-flex-1" percent="{{audioControl.percent}}" border-radius="5" activeColor="pink" /> <text>{{audioControl.end_time}}</text>
+    <view class="hj-flex hj-align-items-center">
+     <text>{{audioControl.start_time}}</text> 
+     <!-- <progress class="hj-flex-1" percent="{{audioControl.percent}}" border-radius="5" activeColor="pink" /> -->
+
+      <slider style="margin-top:0;margin-bottom:0" class="hj-flex-1" block-size="12" bindchange="seekToValue" bindchanging="noChangeValue" value="{{audioControl.percent}}" step="1"/>
+
+      <text>{{audioControl.end_time}}</text>
     </view>
     <view class="hj-flex hj-center">
        

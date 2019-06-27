@@ -1,2 +1,42 @@
 <!--index.wxml-->
+<scroll-view class="page">
 
+  <view class="hj-list hj-bg-white">
+    <view class="hj-list-header">
+      基本样式
+    </view>
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="text/index" class="hj-content">
+        文本样式
+      </view>
+    </view>
+
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="list/index" class="hj-content">
+        列表布局
+      </view>
+    </view>
+
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="modal/demo" class="hj-content">
+        模态框
+      </view>
+    </view>
+
+    <view class="hj-list-header">
+      工具类
+    </view>
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="media/audio" class="hj-content">
+        音频播放器
+      </view>
+    </view>
+
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="media/video" class="hj-content">
+        视频播放器
+      </view>
+    </view>
+
+  </view>
+</scroll-view>

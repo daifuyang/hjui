@@ -114,7 +114,7 @@ p, .p {
 .hj-list .hj-list-header{
     background-color: #e0e0e0;
     color: #212121;
-    padding: 16rpx;
+    padding: 16rpx 30rpx;
     font-size: 24rpx;
 }
 
@@ -209,6 +209,14 @@ p, .p {
 
 .hj-flex-1 {
   flex: 1;
+}
+
+.hj-justify-content-center{
+  justify-content: center;
+}
+
+.hj-align-items-center{
+  align-items: center
 }
 
 /* 布局熟悉 */

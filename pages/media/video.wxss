@@ -1,0 +1,4 @@
+/* pages/media/video.wxss */
+video{
+  height: auto;
+}

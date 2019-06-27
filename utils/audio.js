@@ -7,7 +7,6 @@ const init = function (type = 0) {
     case 0:
       audioType = 0;
       audioManage = wx.createInnerAudioContext();
-      //audioManage.autoplay = true;
       return audioManage;
       break;
     case 1:
@@ -27,7 +26,7 @@ const play = function(){
         audioManage.play();
         break;
       case 1:
-      
+        audioManage.play();
         break;
     } 
   }
@@ -42,6 +41,7 @@ const pause = function () {
         audioManage.pause();
         break;
       case 1:
+        audioManage.pause();
         break;
     }
   }
@@ -56,6 +56,7 @@ const stop = function () {
         audioManage.stop();
         break;
       case 1:
+        audioManage.stop();
         break;
     }
   }
@@ -79,19 +80,20 @@ const seek = function(num){
     if (audioManage.duration > 0 && num >= audioManage.duration) {
       num = audioManage.duration
     }
-
-    audioManage.seek(num);
+    switch (parseInt(audioType)) {
+      case 0:
+        audioManage.seek(num);
+        break;
+      case 1:
+        audioManage.seek(num);
+        break;
+    }
 
   }
 }
 
-const status = function(){
-  console.log(audioType,audioManage);
-}
-
 module.exports = {
   init: init,
-  status: status,
   play:play,
   pause: pause,
   stop:stop,

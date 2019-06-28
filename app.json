@@ -7,7 +7,8 @@
     "pages/modal/index",
     "pages/modal/share",
     "pages/media/audio",
-    "pages/media/video"
+    "pages/media/video",
+    "pages/wxparse/demo"
   ],
   "requiredBackgroundModes": [
     "audio"

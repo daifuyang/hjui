@@ -23,6 +23,12 @@
       </view>
     </view>
 
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="wxparse/demo" class="hj-content">
+        富文本解析
+      </view>
+    </view>
+
     <view class="hj-list-header">
       工具类
     </view>

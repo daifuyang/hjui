@@ -90,7 +90,7 @@ p, .p {
 }
 
 /* 背景颜色 */
-.hj-center{
+.hj-text-center{
   text-align: center
 }
 /* 辅助属性
@@ -172,6 +172,20 @@ p, .p {
   height: 150rpx !important;
 }
 
+.hj-list .hj-list-item .hj-media-full{
+  width: 100% !important;
+  height: 400rpx !important;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 0rpx;
+  overflow: hidden;
+}
+
+.hj-list .hj-list-item .hj-media-full image{
+  width: 100% !important;
+  height: 400rpx !important;
+}
+
 .hj-list .hj-list-item .hj-content .hj-title {
   font-size: 32rpx;
   color: #333;
@@ -207,6 +221,20 @@ p, .p {
   display: flex;
 }
 
+.hj-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.hj-flex-row{
+  flex-direction: row;
+}
+
+.hj-flex-coloum{
+  flex-direction: column;
+}
+
 .hj-flex-1 {
   flex: 1;
 }
@@ -223,4 +251,62 @@ p, .p {
 
 .hj-content-padded {
   padding: 20rpx 30rpx;
+}
+
+.hj-margin-0{
+  margin: 0rpx !important;
+}
+
+.hj-margin-t-10{
+  margin-top: 20rpx;
+}
+
+.hj-margin-r-5{
+  margin-right: 10rpx;
+}
+
+.hj-padded-10{
+  padding: 20rpx;
+}
+
+.hj-padded-t-10{
+  padding-top: 20rpx;
+}
+
+.hj-padded-b-10{
+  padding-bottom: 20rpx;
+}
+
+.hj-relative{
+  width: 100%;
+  position: relative;
+}
+
+.hj-absolute{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* 表单样式 */
+.text-area{
+  display: block;
+  width: 100%;
+  
+}
+
+.text-area textarea{
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20rpx;
+  height: 140rpx;
+  padding: 20rpx;
+  border:1px solid rgba(245,245,245,1);
+}
+
+/* 下边阴影 */
+.hj-border-shadow{
+  box-shadow:0px 4rpx 4rpx 0px rgba(169,165,157,0.07);
+  border:2rpx solid rgba(239,242,255,1);
 }

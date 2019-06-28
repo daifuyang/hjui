@@ -1,5 +1,6 @@
 <!--pages/list/index.wxml-->
-<view class="hj-list  hj-bg-white">
+<scroll-view scroll-y="true" class="page">
+  <view class="hj-list  hj-bg-white">
   <view class="hj-list-header">
     简单列表
   </view>
@@ -31,23 +32,23 @@
     </view>
   </view>
 
-    <view class="hj-list-item hj-no-icon-border">
-      <view class="icon">
-        <text class="iconfont iconsetting"></text>
-      </view>
-      <view class="hj-content">
-        <view class="hj-flex">
-          <view class="hj-flex-1">内容下划线列表页，图标留白</view>
-            <view class="hj-more">
-              <text class="iconfont iconright"></text>
-            </view>
+  <view class="hj-list-item hj-no-icon-border">
+    <view class="icon">
+      <text class="iconfont iconsetting"></text>
+    </view>
+    <view class="hj-content">
+      <view class="hj-flex">
+        <view class="hj-flex-1">内容下划线列表页，图标留白</view>
+        <view class="hj-more">
+          <text class="iconfont iconright"></text>
         </view>
       </view>
     </view>
+  </view>
 
-   <view class="hj-list-header">
-      带媒体列表
-    </view>
+  <view class="hj-list-header">
+    带媒体列表
+  </view>
 
   <view class="hj-list-item">
     <view class="hj-list-media">
@@ -68,8 +69,8 @@
     </view>
   </view>
 
+  <!-- 小图在右 -->
   <view class="hj-list-item">
-    
     <view class="hj-content">
       <view class="hj-title hj_ellipsis_1">
         什么是hjui
@@ -85,10 +86,22 @@
       </view>
     </view>
 
-    
     <view class="hj-more">
       <text class="iconfont iconright"></text>
     </view>
   </view>
 
+  <!-- 大图显示 -->
+  <view class="hj-list-item hj-flex-coloum">
+    <view class="hj-content">
+      <view class="hj-title hj_ellipsis_1"> 什么是hjui</view>
+    </view>
+    <view class="hj-list-media hj-media-full">
+      <image src="http://iph.href.lu/100x75"></image>
+    </view>
+    <view class="hj-desc">
+      2019/4/15
+    </view>
+  </view>
 </view>
+</scroll-view>

@@ -1,7 +1,28 @@
 <!--pages/media/video.wxml-->
-<view class="section tc">
-  <video object-fit="contain" style="width:{{videoWidth}}px;min-height:{{videoHeight}}px" class="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls ></video>
-  <view class="btn-area">
-    <button bindtap="bindButtonTap">获取视频</button>
+<view class="page">
+  <video object-fit="contain" style="width:{{videoWidth}}px;min-height:{{videoHeight}}px" class="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls 
+  danmu-list="{{danmu_list}}" danmu-btn="true" enable-danmu="true">
+  <cover-view class="video-copyright">
+    logo
+  </cover-view>
+  </video>
+
+<scroll-view class="hj-flex-1" scroll-y="true">
+  <view class="hj-bg-white">
+    <view class="hj-tab">
+      <view bindtap="setTab" data-id="0" class="hj-tab-item {{currentIndex == 0 ? 'active' : ''}}">
+        <text>简介</text>
+        <text class="ud-line"></text>
+      </view>
+      <view bindtap="setTab" data-id="1" class="hj-tab-item {{currentIndex == 1 ? 'active' : ''}}">
+        <text>评论</text>
+        <text class="ud-line"></text>
+        <!-- <view class="video-barrage">
+          <view class="barrage-btn">弹</view>
+        </view> -->
+      </view>
+    </view>
   </view>
+</scroll-view>
+
 </view>

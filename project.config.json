@@ -13,7 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.2",
+	"libVersion": "2.7.3",
 	"appid": "wx7a01ad6bcd572f1c",
 	"projectname": "hjui",
 	"debugOptions": {
@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 6,
 			"list": [
 				{
 					"id": 0,
@@ -75,6 +75,19 @@
 					"name": "视频页面",
 					"pathName": "pages/media/video",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tab/index",
+					"pathName": "pages/tab/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/media/video",
+					"pathName": "pages/media/video",
 					"scene": null
 				}
 			]

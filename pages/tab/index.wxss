@@ -1,0 +1,68 @@
+/* pages/tab/index.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+}
+
+.hj-tab-content{
+  margin-top: 20rpx;
+}
+
+.hj-list{
+  border-top: none;
+}
+
+.hj-list-item .hj-content{
+  box-sizing: border-box;
+  width: 0;
+}
+
+.hj-list-item .title{
+  font-size:32rpx;
+  font-weight:bold;
+  color:rgba(40,40,40,1);
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hj-list-item .date{
+  color: #B4B4B4;
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.hj-list-item .desc{
+  font-size: 28rpx;
+  color: #B4B4B4;
+  margin-right: 20rpx;
+}
+
+.hj-list .hj-list-item .icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.hj-list .hj-list-item .icon image{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+} 
+
+.hj-list .hj-list-item .dot_block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hj-list .hj-list-item .dot_block .dot{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  background-color: #FF5858;
+  color: #fff;
+  border-radius: 50%;
+}

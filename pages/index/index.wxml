@@ -5,9 +5,16 @@
     <view class="hj-list-header">
       基本样式
     </view>
+
     <view class="hj-list-item">
       <view bindtap="openView" data-name="text/index" class="hj-content">
         文本样式
+      </view>
+    </view>
+
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="tab/index" class="hj-content">
+        tab切换工具
       </view>
     </view>
 

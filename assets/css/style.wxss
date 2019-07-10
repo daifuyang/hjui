@@ -56,7 +56,7 @@ h6, .h6 {
 }
 
 p, .p {
-  font-size: 0.7rem;
+  font-size: 28rpx;
   color: #757575;
   margin-bottom: 30rpx;
 }
@@ -64,6 +64,10 @@ p, .p {
 /* 辅助属性
 ** 颜色属性
 */
+
+.hj-text-white {
+  color: #ffffff !important;
+}
 
 .hj-text-primary {
   color: #00bcd4 !important;
@@ -92,6 +96,14 @@ p, .p {
 /* 背景颜色 */
 .hj-text-center{
   text-align: center
+}
+
+.hj-text-left{
+  text-align: left
+}
+
+.hj-text-right{
+  text-align: right
 }
 /* 辅助属性
 ** 图片文本
@@ -202,7 +214,7 @@ p, .p {
  */
 
 .hj_ellipsis_1 {
-  white-space: normal;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -243,9 +255,14 @@ p, .p {
   justify-content: center;
 }
 
+.hj-justify-content-end{
+  justify-content: flex-end;
+}
+
 .hj-align-items-center{
   align-items: center
 }
+
 
 /* 布局熟悉 */
 
@@ -257,12 +274,35 @@ p, .p {
   margin: 0rpx !important;
 }
 
+.hj-margin-l-10{
+  margin-left: 20rpx !important;
+}
+.hj-margin-r-0{
+  margin-right: 0rpx !important;
+ }
+
 .hj-margin-t-10{
   margin-top: 20rpx;
 }
 
+.hj-margin-b-5{
+  margin-bottom: 5rpx;
+}
+
+.hj-margin-b-10{
+  margin-bottom: 20rpx;
+}
+
+.hj-margin-b-15{
+  margin-bottom: 30rpx;
+}
+
 .hj-margin-r-5{
   margin-right: 10rpx;
+}
+
+.hj-margin-r-10{
+  margin-right: 20rpx;
 }
 
 .hj-padded-10{
@@ -289,6 +329,67 @@ p, .p {
   width: 100%;
 }
 
+/* 格子布局 */
+.hj-row{
+  overflow: hidden;
+	margin: 0;
+} 
+
+.hj-row-padded {
+	margin-left: -28.125rpx;
+	margin-right: -28.125rpx;
+}
+.hj-row-padded [class*=hj-col-] {
+	padding:-28.125rpx;
+}
+[class*=hj-col-] {
+  box-sizing: border-box;
+}
+.hj-col-1,.hj-col-2,.hj-col-3,.hj-col-4,.hj-col-5,.hj-col-6,.hj-col-7,.hj-col-8,.hj-col-9,.hj-col-10,.hj-col-11,.hj-col-5 {
+	position: relative;
+	float: left;
+}
+.hj-col-12 {
+	width: 100%;
+	position: relative;
+}
+.hj-col-11 {
+	width: 91.66666667%;
+}
+.hj-col-10 {
+	width: 83.33333333%;
+}
+.hj-col-9 {
+	width: 75%;
+}
+.hj-col-8 {
+	width: 66.66666667%;
+}
+.hj-col-7 {
+	width: 58.33333333%;
+}
+.hj-col-6 {
+	width: 50%;
+}
+.hj-col-5 {
+	width: 41.66666667%;
+}
+.hj-col-4 {
+	width: 33.33333333%;
+}
+.hj-col-3 {
+	width: 25%;
+}
+.hj-col-2 {
+	width: 16.66666667%;
+}
+.hj-col-1 {
+	width: 8.33333333%;
+}
+.hj-col-5 {
+	width: 20%;
+}
+
 /* 表单样式 */
 .text-area{
   display: block;
@@ -309,4 +410,41 @@ p, .p {
 .hj-border-shadow{
   box-shadow:0px 4rpx 4rpx 0px rgba(169,165,157,0.07);
   border:2rpx solid rgba(239,242,255,1);
+}
+
+/* 通用tab按钮 */
+.hj-tab{
+  display: flex;
+  text-align: center;
+  font-size: 28rpx;
+  color: #828282;
+}
+
+.hj-tab-item{
+  flex: 1;
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.active{
+  color: #F5A623;
+}
+
+.hj-tab-item .ud-line{
+  display: none;
+}
+
+.active .ud-line{
+  position: absolute;
+  bottom: 0;
+  display:block;
+  width:40rpx;
+  height:6rpx;
+  background:rgba(245,166,35,1);
+  border-radius:4px;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,32 +1,18 @@
-// pages/media/video.js
+// pages/tab/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    videoWidth:0,
-    videoHeight:0,
-    currentIndex:0,
-    danmu_list:[
-      {
-        text: '第 1s 出现的弹幕',
-        color: '#ff0000',
-        time: 1
-      },
-      {
-        text: '第 3s 出现的弹幕',
-        color: '#ff00ff',
-        time: 3
-      }
-    ]
+    currentIndex: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.initVideo();
+
   },
 
   /**
@@ -77,15 +63,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //初始化视频播放器
-  initVideo:function(){
-    var width = wx.getSystemInfoSync().windowWidth;
-    var height = width * 9 / 16;
-    this.setData({
-      videoWidth: width,
-      videoHeight: height
-    })
-  },
+
   //点击事件
   setTab(e) {
     var that = this;
@@ -95,6 +73,7 @@ Page({
       'currentIndex': id
     });
   },
+
   swiperChange(e) {
     var that = this;
     var id = e.detail.current;

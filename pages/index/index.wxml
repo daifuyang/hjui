@@ -13,6 +13,12 @@
     </view>
 
     <view class="hj-list-item">
+      <view bindtap="openView" data-name="button/index" class="hj-content">
+        常用按钮
+      </view>
+    </view>
+
+    <view class="hj-list-item">
       <view bindtap="openView" data-name="tab/index" class="hj-content">
         tab切换工具
       </view>
@@ -48,6 +54,16 @@
     <view class="hj-list-item">
       <view bindtap="openView" data-name="media/video" class="hj-content">
         视频播放器
+      </view>
+    </view>
+
+     <view class="hj-list-header">
+      页面演示
+    </view>
+
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="calendar/index" class="hj-content">
+        日历签到
       </view>
     </view>
 

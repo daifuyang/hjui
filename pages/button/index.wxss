@@ -1,0 +1,5 @@
+/* pages/button/index.wxss */
+.tips{
+  color: #757575;
+  margin-bottom: 10rpx;
+}

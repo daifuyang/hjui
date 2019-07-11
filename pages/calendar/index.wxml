@@ -1,0 +1,82 @@
+<!--pages/calendar/index.wxml-->
+<!--pages/mission/index.wxml-->
+<scroll-view scroll-y="true" class="page">
+  <view class="header">
+    <view class="intro_learn_day">
+      连续签到
+      <text class="big">18</text>天
+    </view>
+
+    <view class="intro_learn_time">
+      学习时间
+      <text class="big">23</text> min
+    </view>
+    <image mode="widthFix" src="/assets/images/calendar/bg.png"></image>
+
+    <view class="calendar">
+      <view class="hj-content-padded">
+        <view class="hj-bg-white card">
+          <view class="date">{{month}}月 / {{year}}</view>
+          <view style="margin-bottom:40rpx" class="row">
+            <block wx:for="{{weekStr}}">
+              <view class="item">{{item}}</view>
+            </block>
+            <view class="clearfix"></view>
+          </view>
+
+          <view class="row">
+            <view class="day">
+              <block wx:for="{{dayArr}}">
+                <view class="day_item">
+                  <view class="icon {{item == 8 ? 'active' : ''}}">
+                    {{item}}
+                  </view>
+                </view>
+              </block>
+            </view>
+            <view class="clearfix"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="mission">
+    <view class="hj-content-padded">
+      <view style="padding-left:30rpx;padding-right:30rpx" class="hj-bg-white card">
+        <view class="title">积分任务</view>
+
+        <view class="hj-list">
+          <view class="hj-list-item">
+            <view class="hj-content">
+              每日签到
+            </view>
+            <view class="hj-more">
+              <view class="btn btn-success">已完成</view>
+            </view>
+          </view>
+
+          <view class="hj-list-item">
+            <view class="hj-content">
+              新人邀请
+            </view>
+            <view class="hj-more">
+              <view class="btn">去完成</view>
+            </view>
+          </view>
+
+          <view class="hj-list-item">
+            <view class="hj-content">
+              信息完善
+            </view>
+            <view class="hj-more">
+              <view class="btn">去完成</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,88 @@
+<!--pages/button/index.wxml-->
+<scroll-view class="page" scroll-y="true">
+  <view class="hj-content-padded">
+    <view class="tips">
+      内联按钮
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn">默认按钮(default)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-primary">默认按钮(primary)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-success">默认按钮(success)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-info">默认按钮(info)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-warning">默认按钮(warning)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-danger">默认按钮(danger)</view>
+    </view>
+
+    <view class="tips">
+      块按钮
+    </view>
+
+   <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block">默认按钮(default)</view>
+    </view>
+    
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block hj-btn-primary">默认按钮(primary)</view>
+    </view>
+    
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block hj-btn-success">默认按钮(success)</view>
+    </view>
+
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block hj-btn-info">默认按钮(info)</view>
+    </view>
+
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block hj-btn-warning">默认按钮(warning)</view>
+    </view>
+
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-block hj-btn-danger">默认按钮(danger)</view>
+    </view>
+
+    <view class="tips">
+      镂空按钮
+    </view>
+
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-outlined">默认按钮(default)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-primary hj-btn-outlined">默认按钮(primary)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-success hj-btn-outlined">默认按钮(success)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-info hj-btn-outlined">默认按钮(info)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-warning hj-btn-outlined">默认按钮(warning)</view>
+    </view>
+    <view class="hj-margin-b-10">
+      <view class="hj-btn hj-btn-danger hj-btn-outlined">默认按钮(danger)</view>
+    </view>
+
+
+    <view class="tips">
+      主题按钮
+    </view>
+
+    <view class="hj-btn hj-theme-yellow">
+      主题按钮(warning)
+    </view>
+
+  </view>
+  
+</scroll-view>

@@ -34,3 +34,136 @@
   font-size: 20rpx;
   border: 2rpx solid #f1f1f1;
 }
+
+.hj-tab-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#fff; 
+}
+
+.hj-tab-content{
+  flex: 1;
+}
+
+.hj-tab-content .tab_content_item{
+  height: 100%;
+}
+
+.hj-video-desc .title{
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.hj-video-desc .desc .item{
+  color: #999;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+}
+
+.hj-video-desc .content{
+  margin: 20rpx 0;
+  /* border-top: 2rpx solid rgba(0,0,0,.1);
+  border-bottom: 2rpx solid rgba(0,0,0,.1); */
+  color: #333;
+  font-size: 28rpx;
+  text-align: justify;
+}
+
+.hj-video-desc .label .labels .item{
+    display: inline-block;
+    background: #f7f8fa;
+    border-radius: 4rpx;
+    padding: 16rpx 24rpx;
+    font-size: 24rpx;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 40rpx 20rpx 0;
+}
+
+.hj-video-desc .source{
+  font-size: 24rpx;
+  margin-top:20rpx; 
+}
+
+/* 评论 */
+.hj-comment .hj-list{
+  border: none;
+}
+
+.hj-comment .hj-list .hj-list-item{
+  flex-direction: column;
+}
+
+.hj-comment .wrap_head{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.hj-comment .wrap_head image{
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+}
+
+.hj-comment .wrap_head .nickname{
+  margin-right: 30rpx;
+  color: #999;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+
+.hj-comment .content{
+  color: #333;
+  font-size: 28rpx;
+  margin-left: 64rpx;
+}
+
+.footer{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding:20rpx 20rpx;
+  border-top: 2rpx solid #f5f5f5;
+  box-sizing: border-box;
+}
+
+.footer .hj-flex{
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer .input-comment{
+  width: 55%;
+  background-color:#f5f5f5; 
+  padding-left: 20rpx;
+  color: #999;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  padding:10rpx 20rpx;
+}
+
+.footer .comment{
+  box-sizing: border-box;
+}
+.footer .comment .input-comment{
+  width: 100%;
+}
+
+.footer .icon-menu .item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .icon-menu .item .iconfont{
+  display: inline-block;
+  font-size: 38rpx;
+}
+
+.footer .hj-btn{
+  margin-left: 30rpx;
+}

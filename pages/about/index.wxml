@@ -1,0 +1,12 @@
+<!--pages/about/index.wxml-->
+<scroll-view class="page" scroll-y>
+  <view class="hj-content-padded hj-bg-white">
+    <view class="h3">火箭源码</view>
+     <view class="content">
+        <view class="h5">个人介绍</view>
+        <view class="p">邮箱: 1140444693@qq.com</view>
+        <view class="p">Q  Q: 1140444693</view>
+        <view class="p">微信: daifuyang123</view>
+      </view>
+  </view>
+</scroll-view>

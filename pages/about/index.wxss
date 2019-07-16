@@ -1,0 +1,14 @@
+/* pages/about/index.wxss */
+.h3{
+  padding-left: 20rpx;
+  border-left: 5rpx solid #ffe300;
+  margin-bottom:40rpx;
+}
+
+.h5{
+  margin-bottom: 30rpx;
+}
+
+.p{
+  
+}

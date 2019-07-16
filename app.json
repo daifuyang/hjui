@@ -11,7 +11,8 @@
     "pages/media/audio",
     "pages/media/video",
     "pages/wxparse/demo",
-    "pages/calendar/index"
+    "pages/calendar/index",
+    "pages/about/index"
   ],
   "requiredBackgroundModes": [
     "audio"

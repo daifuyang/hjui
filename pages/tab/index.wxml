@@ -28,10 +28,5 @@
         2
       </scroll-view>
     </swiper-item>
-    <swiper-item>
-      <scroll-view class="tab_content_item" scroll-y="true">
-        3
-      </scroll-view>
-    </swiper-item>
   </swiper>
 </view>

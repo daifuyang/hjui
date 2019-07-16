@@ -8,6 +8,7 @@ Page({
     videoWidth:0,
     videoHeight:0,
     currentIndex:0,
+    sendComment:false,
     danmu_list:[
       {
         text: '第 1s 出现的弹幕',
@@ -19,7 +20,8 @@ Page({
         color: '#ff00ff',
         time: 3
       }
-    ]
+    ],
+    comment:''
   },
 
   /**
@@ -101,5 +103,39 @@ Page({
     this.setData({
       'currentIndex': id
     });
+  },
+  //发开弹幕评论页
+  openComment:function(e){
+    this.setData({
+      sendComment:true
+    })
+  },
+  //关闭弹幕
+  closeComment:function(e){
+    this.setData({
+      sendComment: false
+    })
+  },
+  //获取弹幕
+  getComment:function(e){
+    var value = e.detail.value;
+    console.log(value);
+    this.setData({
+      comment:value
+    })
+  },
+  //发送弹幕
+  sendComment:function(e){
+    var video = wx.createVideoContext("video",this);
+    var comment = this.data.comment;
+    console.log(comment);
+    video.sendDanmu({
+      text:comment,
+      color:"#fff"
+    });
+    this.setData({
+      comment:'',
+      sendComment:false
+    })
   }
 })

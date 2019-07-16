@@ -67,5 +67,11 @@
       </view>
     </view>
 
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="about/index" class="hj-content">
+        关于我们
+      </view>
+    </view>
+
   </view>
 </scroll-view>

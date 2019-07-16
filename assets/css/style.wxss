@@ -418,6 +418,9 @@ p, .p {
   text-align: center;
   font-size: 28rpx;
   color: #828282;
+  border-bottom: 2rpx solid #f5f5f5;
+  box-shadow: 0px 0px 10rpx #f5f5f5;
+
 }
 
 .hj-tab-item{
@@ -527,4 +530,17 @@ p, .p {
   border-radius: 44rpx;
   text-align: center;
   box-sizing: border-box;
+}
+
+.hj-theme-grey{
+  color: #fff;
+  background: #e0e0e0;
+  border-radius: 44rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* common */
+.fullHeight{
+  height: 100%;
 }

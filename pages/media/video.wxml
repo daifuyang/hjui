@@ -1,28 +1,122 @@
 <!--pages/media/video.wxml-->
 <view class="page">
-  <video object-fit="contain" style="width:{{videoWidth}}px;min-height:{{videoHeight}}px" class="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls 
-  danmu-list="{{danmu_list}}" danmu-btn="true" enable-danmu="true">
-  <cover-view class="video-copyright">
-    logo
-  </cover-view>
+  <video id="video" object-fit="contain" style="width:{{videoWidth}}px;min-height:{{videoHeight}}px" class="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    controls danmu-list="{{danmu_list}}" title="视频演示一" danmu-btn="true" enable-danmu="true">
+    <cover-view class="video-copyright">
+      logo
+    </cover-view>
   </video>
 
-<scroll-view class="hj-flex-1" scroll-y="true">
-  <view class="hj-bg-white">
-    <view class="hj-tab">
-      <view bindtap="setTab" data-id="0" class="hj-tab-item {{currentIndex == 0 ? 'active' : ''}}">
-        <text>简介</text>
-        <text class="ud-line"></text>
-      </view>
-      <view bindtap="setTab" data-id="1" class="hj-tab-item {{currentIndex == 1 ? 'active' : ''}}">
-        <text>评论</text>
-        <text class="ud-line"></text>
-        <!-- <view class="video-barrage">
+  <view bindtap="closeComment" class="hj-flex-1">
+    <view class="hj-tab-container">
+      <view class="hj-tab">
+        <view bindtap="setTab" data-id="0" class="hj-tab-item {{currentIndex == 0 ? 'active' : ''}}">
+          <text>简介</text>
+          <text class="ud-line"></text>
+        </view>
+        <view bindtap="setTab" data-id="1" class="hj-tab-item {{currentIndex == 1 ? 'active' : ''}}">
+          <text>评论</text>
+          <text class="ud-line"></text>
+          <!-- <view class="video-barrage">
           <view class="barrage-btn">弹</view>
         </view> -->
+        </view>
+      </view>
+      <view class="hj-tab-content">
+        <swiper class="fullHeight" bindchange="swiperChange" current="{{currentIndex}}">
+          <swiper-item>
+            <scroll-view class="tab_content_item" scroll-y="true">
+              <view class="hj-content-padded hj-video-desc">
+                <view class="title">搭帆船去环球</view>
+                <view class="desc">
+                  <text class="item">旅行</text>
+                  <text class="item">播放量：0</text>
+                  <text class="item">2019-07-16 08:19</text>
+                </view>
+                <view class="content">
+                  亲身体验英国人是怎样的美食黑洞，苦逼跨大西洋航行，热到脱水，运用瑜伽动作才能安全的洗澡，还碰上大热天偷懒逃班的大叔，想说不干了吗？你确（neng）定（qu）吗（na）？
+                </view>
+                <view class="label">
+                  <view class="h4">标签</view>
+                  <view class="labels">
+                    <view class="item">搭帆船去环球</view>
+                    <view class="item">搭帆船去环球</view>
+                  </view>
+                </view>
+
+                <view class="source">
+                  <view>注：本文转载自 https://weibo.com/sailaroundtheworld ，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。如有侵权行为，请联系我们，我们会及时删除。</view>
+                </view>
+              </view>
+            </scroll-view>
+          </swiper-item>
+          <swiper-item>
+            <scroll-view class="tab_content_item" scroll-y="true">
+              <view class="hj-comment">
+                <view class="hj-list">
+                  <view class="hj-list-item">
+                    <view class="wrap_head">
+                      <image mode="widthFix" class="head" src="https://v.hji5.com/avatar/20190716/bc820d3e65c004cab16692948170334b.jpg!avatar"></image>
+                      <text class="nickname">陈年果酱君</text>
+                    </view>
+                    <view class="content">
+                      文章，1984年6月26日出生于陕西省西安市，中国内地男演员、导演。2006年毕业于中央戏剧学院表演系。 2004年参演电视剧《与青春有关的日子》，开始在影视圈崭露头角 [1] 。2005年拍摄古装剧《锦衣卫》。2007年主演赵宝刚导演的青春剧《奋斗》； [2] 同年，主演首部电影《走着瞧》。2008年主演滕华涛执导的电视剧《蜗居》，饰演80后城市青年小贝。 [1] [3] 2009年，在电影《海洋天堂》中扮演自闭症患者王大福；同年参演抗战题材的电视剧《雪豹》 [4] 。2011年，主演的电视剧《裸婚时代》在各大卫视播出；
+                      [5] 2011年-2012年连续2年获得北京大学生电影节 [6-7] 最受大学生欢迎男演员奖。2012年，凭借电影《失恋33天》获得第31届大众电影百花奖最佳男主角奖； [8] 同年成立自己经营的北京君竹影视文化有限公司，并导演第一部影视作品《小爸爸》。2013年2月，主演的电影《西游·降魔篇》在全国上映。 [9] 2014年3月28日，主演的中韩合资文艺爱情片《我在路上最爱你》在全国上映。2014年12月18日，在姜文执导的动作喜剧片《一步之遥》中扮演武七一角。
+                      [10] 2016年，主演电视剧《少帅》，饰演张学良 [11] ；主演电视剧《剃刀边缘》 [12] 。7月15日导演的电影《陆垚知马俐》上映。 [13]
+                    </view>
+                  </view>
+
+                  <view class="hj-list-item">
+                    <view class="wrap_head">
+                      <image mode="widthFix" class="head" src="https://v.hji5.com/avatar/20190716/bc820d3e65c004cab16692948170334b.jpg!avatar"></image>
+                      <text class="nickname">陈年果酱君</text>
+                    </view>
+                    <view class="content">
+                      文章，1984年6月26日出生于陕西省西安市，中国内地男演员、导演。2006年毕业于中央戏剧学院表演系。 2004年参演电视剧《与青春有关的日子》，开始在影视圈崭露头角 [1] 。2005年拍摄古装剧《锦衣卫》。2007年主演赵宝刚导演的青春剧《奋斗》； [2] 同年，主演首部电影《走着瞧》。2008年主演滕华涛执导的电视剧《蜗居》，饰演80后城市青年小贝。 [1] [3] 2009年，在电影《海洋天堂》中扮演自闭症患者王大福；同年参演抗战题材的电视剧《雪豹》 [4] 。2011年，主演的电视剧《裸婚时代》在各大卫视播出；
+                      [5] 2011年-2012年连续2年获得北京大学生电影节 [6-7] 最受大学生欢迎男演员奖。2012年，凭借电影《失恋33天》获得第31届大众电影百花奖最佳男主角奖； [8] 同年成立自己经营的北京君竹影视文化有限公司，并导演第一部影视作品《小爸爸》。2013年2月，主演的电影《西游·降魔篇》在全国上映。 [9] 2014年3月28日，主演的中韩合资文艺爱情片《我在路上最爱你》在全国上映。2014年12月18日，在姜文执导的动作喜剧片《一步之遥》中扮演武七一角。
+                      [10] 2016年，主演电视剧《少帅》，饰演张学良 [11] ；主演电视剧《剃刀边缘》 [12] 。7月15日导演的电影《陆垚知马俐》上映。 [13]
+                    </view>
+                  </view>
+
+                </view>
+              </view>
+            </scroll-view>
+          </swiper-item>
+        </swiper>
       </view>
     </view>
   </view>
-</scroll-view>
+  <view class="footer">
+    <block wx:if="{{sendComment}}">
+      <view class="hj-flex comment">
+        <view class="hj-flex-1">
+          <view class="input-comment">
+            <view class="input">
+              <input bindinput="getComment" focus="true" class="input" value="{{comment}}"></input>
+            </view>
+          </view>
+        </view>
+        <view class="hj-margin-l-10">
+          <view bindtap="sendComment" class="hj-btn hj-theme-yellow">发送</view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="hj-flex">
+        <view bindtap="openComment" class="input-comment">
+          <view class="input">
+            <text>发个弹幕试一试</text>
+          </view>
+        </view>
+        <view class="hj-flex-1 icon-menu">
+          <view class="item">
+            <view class="iconfont iconlike"></view>
+            <view class="iconfont iconstar"></view>
+            <view class="iconfont iconshare"></view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
 
 </view>

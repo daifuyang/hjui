@@ -1,0 +1,4 @@
+<!--pages/auxiliary/index.wxml-->
+<scroll-view class="page" scroll-y>
+  
+</scroll-view>

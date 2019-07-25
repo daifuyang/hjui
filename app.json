@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/text/index",
+    "pages/auxiliary/index",
     "pages/button/index",
     "pages/tab/index",
     "pages/list/index",
@@ -12,7 +13,8 @@
     "pages/media/video",
     "pages/wxparse/demo",
     "pages/calendar/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/personal/index"
   ],
   "requiredBackgroundModes": [
     "audio"

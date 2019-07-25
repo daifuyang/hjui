@@ -1,0 +1,1 @@
+<view class="hj-list"><view class="hj-list-header">简单列表</view><view class="hj-list-item">菜单列表项</view><view class="hj-list-item"><view class="icon"><text class="iconfont iconsetting"></text></view><view class="hj-media-body ml-3">菜单列表项</view></view></view>

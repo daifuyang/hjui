@@ -1,0 +1,50 @@
+<!--pages/personal/index.wxml-->
+<!--pages/mechanism/index.wxml-->
+<scroll-view class="page" scroll-y>
+  <view id="hj-head" class="hj-bg-white hj-text-center hj-margin-b-10">
+    <view class="head_bg">
+      <image class="head_pic" mode="widthFix" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3557411268,3771826963&fm=26&gp=0.jpg"></image>
+    </view>
+
+    <view class="card hj-padded-b-10">
+      <view style="margin-top:60rpx;margin-bottom:10rpx;" class="h3">生活家生活</view>
+      <view class="hot hj-margin-b-5">人气：1.3万
+        <text class="iconfont iconhot_fire"></text>
+      </view>
+      <view class="desc hj_ellipsis_1">
+        我们专注于日常生活
+      </view>
+
+      <view>
+        <view class="btn-follow">
+          关注 +
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view id="hj-tab" class="hj-bg-white">
+  <view class="hj-tab">
+    <view bindtap="setTab" data-id="0" class="hj-tab-item {{currentIndex == 0 ? 'active' : ''}}">
+      <text>作品</text>
+      <text class="ud-line"></text>
+    </view>
+    <view bindtap="setTab" data-id="1" class="hj-tab-item {{currentIndex == 1 ? 'active' : ''}}">
+      <text>资料</text>
+      <text class="ud-line"></text>
+    </view>
+  </view>
+</view> 
+
+<view id="hj-tab-content" style="{{contentStyle}}" class="hj-tab-content hj-bg-white">
+  <swiper class="fullHeight" bindchange="swiperChange" current="{{currentIndex}}">
+    <swiper-item>
+      1
+    </swiper-item>
+    <swiper-item>
+      2
+    </swiper-item>
+  </swiper>
+</view>
+
+</scroll-view>

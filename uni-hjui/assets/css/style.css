@@ -1,0 +1,32 @@
+/* 布局样式 */
+.ml-0{
+	margin-left: 0rpx;
+}
+
+.ml-1{
+	margin-left: 10rpx;
+}
+
+.ml-2{
+	margin-left: 20rpx;
+}
+
+.ml-3{
+	margin-left: 30rpx;
+}
+
+.ml-4{
+	margin-left: 40rpx;
+}
+
+.ml-5{
+	margin-left: 50rpx;
+}
+
+.flex-1{
+	flex: 1;
+}
+/* 背景色 */
+.bg-grey{
+	background-color: #E0E0E0;
+}

@@ -8,37 +8,43 @@
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="text/index" class="hj-content">
-        文本样式
+        文本样式 (text)
+      </view>
+    </view>
+
+     <view class="hj-list-item">
+      <view bindtap="openView" data-name="auxiliary/index" class="hj-content">
+        辅助样式 (auxiliary)
       </view>
     </view>
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="button/index" class="hj-content">
-        常用按钮
+        常用按钮 (button)
       </view>
     </view>
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="tab/index" class="hj-content">
-        tab切换工具
+        tab切换工具 (tab)
       </view>
     </view>
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="list/index" class="hj-content">
-        列表布局
+        列表布局 (list)
       </view>
     </view>
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="modal/demo" class="hj-content">
-        模态框
+        模态框 (modal)
       </view>
     </view>
 
     <view class="hj-list-item">
       <view bindtap="openView" data-name="wxparse/demo" class="hj-content">
-        富文本解析
+        富文本解析 (wxparse)
       </view>
     </view>
 

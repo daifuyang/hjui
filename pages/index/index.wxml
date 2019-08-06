@@ -63,6 +63,12 @@
       </view>
     </view>
 
+    <view class="hj-list-item">
+      <view bindtap="openView" data-name="auth/button" class="hj-content">
+        授权按钮
+      </view>
+    </view>
+
      <view class="hj-list-header">
       页面演示
     </view>

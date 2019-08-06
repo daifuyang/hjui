@@ -1,32 +1,464 @@
+/* 辅助属性
+** 文本属性
+*/
+
+page,
+.page {
+	line-height: 1.5;
+	font-size: 32rpx;
+	color: #212121;
+	background-color: #f5f5f5;
+	outline: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+h1,
+.h1 {
+	font-size: 48rpx;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+h2,
+.h2 {
+	font-size: 40rpx;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+h3,
+.h3 {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+h4,
+.h4 {
+	font-size: 28rpx;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+h5,
+.h5 {
+	font-size: 28rpx;
+	font-weight: normal;
+	color: #757575;
+}
+
+h6,
+.h6 {
+	font-size: 28rpx;
+	font-weight: normal;
+	color: #757575;
+}
+
+p,
+.p {
+	font-size: 28rpx;
+	color: #757575;
+	margin-bottom: 30rpx;
+}
+
+/* 辅助属性
+** 颜色属性
+*/
+
+.hj-text-white {
+	color: #ffffff !important;
+}
+
+.hj-text-primary {
+	color: #00bcd4 !important;
+}
+
+.hj-text-success {
+	color: #009688 !important;
+}
+
+.hj-text-info {
+	color: #03a9f4 !important;
+}
+
+.hj-text-warning {
+	color: #ffc107 !important;
+}
+
+.hj-text-danger {
+	color: #e51c23 !important;
+}
+
+.hj-bg-white {
+	background-color: #fff !important;
+}
+
+/* 背景颜色 */
+.hj-text-center {
+	text-align: center
+}
+
+.hj-text-left {
+	text-align: left
+}
+
+.hj-text-right {
+	text-align: right
+}
+
+/* 辅助属性
+** 图片文本
+*/
+
+.wrap_img image {
+	width: 100%;
+}
+
 /* 布局样式 */
-.ml-0{
+.hj-content-padded {
+	padding: 20rpx 30rpx;
+}
+
+.ml-0 {
 	margin-left: 0rpx;
 }
 
-.ml-1{
+.ml-1 {
 	margin-left: 10rpx;
 }
 
-.ml-2{
+.ml-2 {
 	margin-left: 20rpx;
 }
 
-.ml-3{
+.ml-3 {
 	margin-left: 30rpx;
 }
 
-.ml-4{
+.ml-4 {
 	margin-left: 40rpx;
 }
 
-.ml-5{
+.ml-5 {
 	margin-left: 50rpx;
+}
+
+.mt-3 {
+	margin-top: 30rpx;
+}
+
+.mb-2 {
+	margin-bottom: 20rpx;
+}
+
+.mb-3 {
+	margin-bottom: 30rpx;
+}
+
+.pb-3{
+	padding-bottom: 30rpx;
+}
+
+/* flex布局 */
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* 背景色 */
+.bg-grey {
+	background-color: #E0E0E0;
+}
+
+/* 文本样式 */
+h3,
+.h3 {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20rpx;
+}
+
+p,
+.p {
+	font-size: 28rpx;
+	color: #757575;
+	margin-bottom: 30rpx;
+}
+
+/* 默认按钮hj-btn */
+.hj-btn {
+	background: #e0e0e0;
+	text-align: center;
+	border-radius: 8rpx;
+	padding: 10rpx 40rpx;
+	display: inline-block;
+	font-size: 28rpx;
+}
+
+.hj-btn-hover {
+	color: #212121;
+	background: #bdbdbd;
+}
+
+.hj-btn-primary {
+	color: #ffffff;
+	background-color: #00bcd4;
+}
+
+.hj-btn-primary-hover {
+	color: #ffffff;
+	background-color: #00acc1;
+}
+
+.hj-btn-success {
+	color: #ffffff;
+	background-color: #009688;
+}
+
+.hj-btn-success-hover {
+	color: #fff;
+	background-color: #00897b;
+}
+
+.hj-btn-info {
+	color: #ffffff;
+	background-color: #03a9f4;
+}
+
+.hj-btn-info-hover {
+	color: #fff;
+	background-color: #039be5;
+}
+
+.hj-btn-warning {
+	color: #ffffff;
+	background-color: #ffc107;
+}
+
+.hj-btn-warning-hover {
+	color: #ffffff;
+	background-color: #ffb300;
+}
+
+.hj-btn-danger {
+	color: #ffffff;
+	background-color: #e51c23;
+}
+
+.hj-btn-danger-hover {
+	color: #ffffff;
+	background-color: #dd191b;
+}
+
+.hj-btn-block {
+	display: block;
+	width: 100%;
+	font-size: 32rpx;
+	padding: 15rpx 0;
+}
+
+/* 镂空按钮 */
+.hj-btn-outlined {
+	background: transparent !important;
+	border: 1px solid #bdbdbd;
+}
+
+.hj-btn-default.hj-btn-outlined {
+	color: #bdc3c7 !important;
+	border: 1px solid #dcdcdc !important;
+}
+
+.hj-btn-primary.hj-btn-outlined {
+	color: #00bcd4 !important;
+	border: 1px solid #00bcd4 !important;
+}
+
+.hj-btn-success.hj-btn-outlined {
+	color: #009688 !important;
+	border: 1px solid #009688 !important;
+}
+
+.hj-btn-info.hj-btn-outlined {
+	color: #03a9f4 !important;
+	border: 1px solid #03a9f4 !important;
+}
+
+.hj-btn-warning.hj-btn-outlined {
+	color: #ffc107 !important;
+	border: 1px solid #ffc107 !important;
+}
+
+.hj-btn-danger.hj-btn-outlined {
+	color: #e51c23 !important;
+	border: 1px solid #e51c23 !important;
+}
+
+/* 主题按钮 */
+.hj-theme-yellow {
+	color: #fff;
+	background: linear-gradient(167deg, rgba(251, 210, 73, 1) 0%, rgba(245, 166, 35, 1) 100%);
+	border-radius: 44rpx;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.hj-theme-yellow-hover{
+	    background: linear-gradient(167deg, rgb(250, 188, 0) 0%, rgb(251, 157, 0) 100%);
+}
+
+.hj-theme-grey {
+	color: #fff;
+	background: #e0e0e0;
+	border-radius: 44rpx;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* 通用tab按钮 */
+.hj-tab{
+  display: flex;
+  text-align: center;
+  font-size: 28rpx;
+  color: #828282;
+  border-bottom: 2rpx solid #f5f5f5;
+  box-shadow: 0px 0px 10rpx #f5f5f5;
+
+}
+
+.hj-tab-item{
+  flex: 1;
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hj-tab-item.active{
+  color: #F5A623;
+}
+
+.hj-tab-item .ud-line{
+  display: none;
+}
+
+.hj-tab-item.active .ud-line{
+  position: absolute;
+  bottom: 0;
+  display:block;
+  width:40rpx;
+  height:6rpx;
+  background:rgba(245,166,35,1);
+  border-radius:4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 文本溢出 */
+.hj_ellipsis_1 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hj_ellipsis_2 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.fullHeight{
+	height: 100%;
+}
+
+/* flex布局 */
+.d-flex{
+	display: flex;
+}
+
+.d-flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .flex-1{
 	flex: 1;
 }
-/* 背景色 */
-.bg-grey{
-	background-color: #E0E0E0;
+
+/* 格子布局 */
+.hj-row{
+  overflow: hidden;
+	margin: 0;
+} 
+
+.hj-row-padded {
+	margin-left: -28.125rpx;
+	margin-right: -28.125rpx;
+}
+.hj-row-padded [class*=hj-col-] {
+	padding:-28.125rpx;
+}
+[class*=hj-col-] {
+  box-sizing: border-box;
+}
+.hj-col-1,.hj-col-2,.hj-col-3,.hj-col-4,.hj-col-5,.hj-col-6,.hj-col-7,.hj-col-8,.hj-col-9,.hj-col-10,.hj-col-11,.hj-col-5 {
+	position: relative;
+	float: left;
+}
+.hj-col-12 {
+	width: 100%;
+	position: relative;
+}
+.hj-col-11 {
+	width: 91.66666667%;
+}
+.hj-col-10 {
+	width: 83.33333333%;
+}
+.hj-col-9 {
+	width: 75%;
+}
+.hj-col-8 {
+	width: 66.66666667%;
+}
+.hj-col-7 {
+	width: 58.33333333%;
+}
+.hj-col-6 {
+	width: 50%;
+}
+.hj-col-5 {
+	width: 41.66666667%;
+}
+.hj-col-4 {
+	width: 33.33333333%;
+}
+.hj-col-3 {
+	width: 25%;
+}
+.hj-col-2 {
+	width: 16.66666667%;
+}
+.hj-col-1 {
+	width: 8.33333333%;
+}
+.hj-col-5 {
+	width: 20%;
 }
